@@ -1,2 +1,5 @@
 # Exchange-Rate-in-NextJS
-A website where you can compare the value of between two currencys at the exchange rate in that moment.
+## Overview
+
+* A website where you can calculate live currency and foreign exchange rates with the [Exchange Rate API] (https://apilayer.com/marketplace/exchangerates_data-api)
+
