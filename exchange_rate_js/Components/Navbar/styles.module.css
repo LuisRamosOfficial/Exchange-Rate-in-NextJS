@@ -1,0 +1,15 @@
+nav.navbar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+nav.navbar p {
+  font-size: 2rem;
+  color: white;
+}/*# sourceMappingURL=styles.module.css.map */

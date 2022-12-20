@@ -1,8 +1,10 @@
-
+import styles from './styles.module.css'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav className={styles.navbar}>
+      <p>ExchangeRateJS</p>
+    </nav>
   )
 }
 

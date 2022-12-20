@@ -1,22 +1,18 @@
 import Head from 'next/head';
 import { FC } from 'react';
 
-interface MetaProps {
-  title: string;
-  keywords: string;
-  description: string;
-}
 
 
-const Meta: FC<MetaProps> = ({ title, keywords, description }) => {
+
+const Meta: FC= () => {
 	return (
 		<Head>
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
-			<meta name="keywords" content={keywords} />
-			<meta name="description" content={description} />
+			<meta name="keywords" content="Exchange Rate in NextJS" />
+			<meta name="description" content="Exchange Rate in NextJS" />
 			<meta charSet="utf-8" />
 			<link rel="icon" href="/favicon.ico" />
-			<title>{title}</title>
+			<title>Exchange Rate in NextJS</title>
 			<meta name="application-name" content="FruitsFlavours" />
 			<meta name="apple-mobile-web-app-capable" content="yes" />
 			<meta name="apple-mobile-web-app-status-bar-style" content="default" />
