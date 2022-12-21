@@ -32,11 +32,53 @@ main.main {
             color: white;
         }
         div.BoxExchange {
+            margin-top: 4rem;
             display: grid;
             grid-template-columns: 2fr 1fr 2fr;
             grid-template-rows: 1fr 1fr;
             span {
+                align-items: center;
+                padding: 1rem;
                 display: flex;
+                p {
+                    font-size: 2rem;
+                }
+                select {
+                    margin-left: 0.5rem;
+                    padding: 1rem 2rem 1rem 2rem;
+                    outline: none;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 1.2rem;
+                }
+            }
+            input {
+                outline: 1px solid rgb(152, 152, 152);
+                border: none;
+                width: 70%;
+                height: 50%;
+                margin: auto;
+                text-align: center; 
+                font-size: 1.5rem;
+            }
+            input.disabled {
+                outline: 1px solid rgb(152, 152, 152);
+                background-color: rgb(250, 250, 250);
+            }
+            button {
+                margin: auto;
+                grid-row: auto / span 2;
+                border: none;
+                background: none;
+                transition: all 300ms ease-out;
+                cursor: pointer;
+                &:hover {
+                    transform: rotate(180deg);
+                }
+                &:active {
+                    transform: rotate(-190deg);
+                    transform: scale(1.3);
+                }
             }
         }
     }
