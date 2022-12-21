@@ -1,7 +1,7 @@
 main.main {
   margin-top: 130px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -18,4 +18,25 @@ main.main div.presentation p {
 }
 main.main div.presentation div.imagewrapper > img {
   border-radius: 20px;
+}
+main.main section.ExchangingSection {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main.main section.ExchangingSection h1 {
+  padding: 1rem;
+  font-size: 2.5rem;
+  background-color: black;
+  color: white;
+}
+main.main section.ExchangingSection div.BoxExchange {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+main.main section.ExchangingSection div.BoxExchange span {
+  display: flex;
 }/*# sourceMappingURL=index.module.css.map */
