@@ -70,7 +70,7 @@ const ExchangingSection: FC<Props> = ({ data, names, acro }: Props) => {
 		setResponse(Math.round((calculation + Number.EPSILON) * 10000) / 10000);
 	
 
-	}, [Value, Lcurrency, Rcurrency])
+	}, [Value, Lcurrency, Rcurrency, acro, data])
 	
 
 	const SwitchButton: FC = () => {
@@ -110,7 +110,9 @@ const ExchangingSection: FC<Props> = ({ data, names, acro }: Props) => {
 						name={'currencys'}
 					>
 						{names.map((element, index) => (
-							<option value={index}>{element}</option>
+							<option key={element} value={index}>
+								{element}
+							</option>
 						))}
 					</select>
 				</span>
@@ -125,7 +127,9 @@ const ExchangingSection: FC<Props> = ({ data, names, acro }: Props) => {
 						name={'currencys'}
 					>
 						{names.map((element, index) => (
-							<option value={index}>{element}</option>
+							<option key={element} value={index}>
+								{element}
+							</option>
 						))}
 					</select>
 				</span>
