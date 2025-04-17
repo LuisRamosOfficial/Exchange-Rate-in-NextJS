@@ -152,15 +152,41 @@ const ExchangingSection: FC<Props> = ({ data, names, acro }: Props) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-	const res = await fetch('http://localhost:3000/api/currency_list');
-	const data = await res.json();
+	const res = await fetch('/api/currency_list');
+	const data: any = {
+		GBP: {
+			name: 'British Pound 🇬🇧',
+			symbol: '£',
+			rate: 0.8202,
+		},
+		USD: {
+			name: 'US Dollar 🇺🇸',
+			symbol: '$',
+			rate: 1,
+		},
+		EUR: {
+			name: 'Euro 🇪🇺',
+			symbol: '€',
+			rate: 0.9399,
+		},
+		STN: {
+			name: 'STP Dobra 🇸🇹',
+			symbol: '£',
+			rate: 23.2635,
+		},
+		BRL: {
+			name: 'Brazillean Real 🇧🇷',
+			symbol: '£',
+			rate: 5.3133,
+		},
+	};
 
 
-	const res_acro = await fetch('http://localhost:3000/api/currency_list/acronyms');
-	const acro = await res_acro.json();
+	
+	const acro: any = ['GBP', 'USD', 'EUR', 'STN', 'BRL'];
 	let names = [];
 
-	for (const key in data) {
+	for (const key  in data) {
 		names.push(data[key].name);
 	}
 
