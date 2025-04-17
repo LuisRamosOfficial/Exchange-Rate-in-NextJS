@@ -152,7 +152,6 @@ const ExchangingSection: FC<Props> = ({ data, names, acro }: Props) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-	const res = await fetch('/api/currency_list');
 	const data: any = {
 		GBP: {
 			name: 'British Pound 🇬🇧',
